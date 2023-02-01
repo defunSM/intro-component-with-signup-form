@@ -1,0 +1,132 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+html {
+  background-image: url('/images/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%) ;
+  font-family: "Poppins", serif;
+  color: white;
+}
+
+h1 {
+  font-weight: bold 700;
+  font-size: 3.3rem;
+}
+
+p { font-size: 1.2rem; font-weight: 500; }
+
+.left {
+  width: 36rem;
+}
+
+.pricing {
+  border-radius: 0.5rem;
+  background-color: #5D54A2 ;
+  width: 30rem;
+  margin: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0rem 0.5rem 0px rgba(207, 79, 76, 0.5);
+}
+
+#bold-style {
+  font-weight: 800;
+  margin-right: 0.2rem;
+}
+
+#red-color {
+  color: hsl(0, 100%, 74%);
+  margin-left: 0.2rem;
+  font-weight: 700;
+}
+
+input {
+  border-style: groove;
+
+  padding: 1rem;
+  padding-left: 2rem;
+  border-color: lightgrey;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+input:focus {
+  border-color: black;
+  outline: black;
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0rem 0.5rem 0px rgba(207, 79, 76, 0.5);
+}
+
+.submit {
+  border-style: solid;
+  outline: hsl(154, 59%, 51%);
+  border-radius: 0.2rem;
+  background-color: hsl(154, 59%, 51%);
+  border-color: hsl(154, 59%, 51%);
+  font-weight: 700;
+  color: white;
+  padding: 1rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.submit:hover {
+  background-color: hsl(154, 59%, 45%);
+  cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  column-gap: 3rem;
+}
+
+@media (max-width: 75rem) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    overflow-wrap: break-word;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+}
